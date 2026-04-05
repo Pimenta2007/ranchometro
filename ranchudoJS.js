@@ -75,7 +75,7 @@ function gerarMensagem() {
 
   // 🔒 Validação
   if (!nome) {
-    alert("Por favor, preencha o NOME antes de gerar a mensagem.");
+    alert("Por favor, preencha o QRA antes de gerar a mensagem.");
     return;
   }
 
