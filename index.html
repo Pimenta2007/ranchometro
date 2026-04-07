@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+<title>Alteração de Rancho</title>
+</head>
+
+<body>
+  <div class="app">
+
+    <h1>Alteração de Rancho</h1>
+    <p>Sistema criado para auxiliar nas alterações de rancho. As semanas estão marcadas como a atual e a seguinte. Todo campo marcado com VERDE vai indicar uma refeição que será adicionada, e VERMELHA para refeições a serem retiradas</p>
+    <div class="conteudo-central">
+
+
+      <div id="infos">
+        <div id="nome">
+          <label>QRA:</label>
+          <input type="text" id="QRA">
+        </div>
+        <div id="cfo">
+          <label>CFO:</label>
+          <select name="cfos" id="anoCFO">
+            <option value="1">1º</option>
+            <option value="2">2º</option>
+            <option value="3">3º</option>
+            <option value="4">4º</option>
+          </select>
+        </div>
+        <div id="pelotao">
+          <label>Pelotão:</label>
+          <input type="text" id="pelotinho">
+        </div>
+        <div id="cia">
+          <label>CIA:</label>
+          <select name="cias" id="companhia">
+            <option value="1">1º CIA</option>
+            <option value="2">2º CIA</option>
+            <option value="3">3º CIA</option>
+            <option value="4">4º CIA</option>
+          </select>
+        </div>
+      </div>
+      
+
+
+
+
+
+      <label>Motivo:</label>
+      <select name="motivos" id="motivo">
+        <option value="Conval">Conval</option>
+        <option value="Troca de serviço">Troca de serviço</option>
+        <option value="Preencheu errado">Preencheu errado</option>
+        <option value="LEC">LEC</option>
+        <option value="Folga">Folga</option>
+      </select>
+
+      <div id="container"></div>
+
+      <button id="criar" onclick="gerarMensagem()">GERAR MENSAGEM</button>
+
+      <div id="resultado"></div>
+
+    </div>
+  </div>
+  <script src="ranchudoJS.js"></script>
+</body>
+</html>
