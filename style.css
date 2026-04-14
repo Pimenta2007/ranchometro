@@ -1,0 +1,290 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+input{
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 300px;
+}
+
+p{
+  margin-bottom: 40px;
+}
+
+.semana {
+  margin-bottom: 30px;
+}
+
+.dia {
+  display: grid;
+  grid-template-columns: 180px 100px 100px 100px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#container{
+    margin-top: 50px;
+}
+
+/* Área central com largura fixa igual ao grid */
+.conteudo-central {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Inputs ocupam exatamente a largura do grid */
+.conteudo-central input,
+.conteudo-central textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Mantém o grid centralizado dentro */
+.grid-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+
+button {
+  width: 90px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.add {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.remove {
+  background-color: #f44336;
+  color: white;
+}
+
+#resultado {
+  white-space: pre-line;
+  margin-top: 20px;
+  padding: 10px;
+  /*border: 1px solid #ccc;*/
+}
+
+/* 📱 Ajustes para celular */
+@media (max-width: 800px) {
+
+  body {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .dia {
+    grid-template-columns: 120px 1fr 1fr 1fr;
+    gap: 5px;
+  }
+
+  .dia strong {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  .semana h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  #resultado {
+    font-size: 20px;
+  }
+
+  #btnWhatsapp {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Centralizar título */
+h2 {
+  text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* Centralizar botão principal */
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+
+
+body{
+    background-color: rgb(30, 30, 85);
+    color: white;
+}
+
+input{
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+}
+
+button:hover{
+    box-shadow: 5px 5px 10px rgb(6, 0, 46);
+}
+
+#criar{
+    width: 200px;
+}
+
+#criar:hover{
+    background-color: rgb(232, 174, 0);
+    color: white;
+}
+
+#btnWhatsapp {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: green;
+    color: white;
+}
+
+#motivo{
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+}
+
+#nome{
+  width: 60%;
+}
+#pelotao{
+  width: 10%;
+}
+#cia{
+  width: 12%;
+}
+
+#cfo{
+  width: 10%;
+}
+
+#infos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+div select{
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+.cinza {
+  background-color: gray;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+
+@media (max-width: 800px) {
+
+  .app {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .conteudo-central {
+    width: 100%;
+  }
+
+  .grid-wrapper {
+    width: 100%;
+  }
+
+  #container {
+    width: 100%;
+  }
+
+  .semana {
+    width: 100%;
+  }
+
+  .dia {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* tudo proporcional */
+    width: 100%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+
+@media (max-width: 800px) {
+
+  .dia {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  button {
+    height: 60px;
+    font-size: 18px;
+  }
+
+  .dia strong {
+    font-size: 18px;
+  }
+}
