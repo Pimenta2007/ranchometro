@@ -136,7 +136,6 @@ function gerarMensagem() {
   const CIA = document.getElementById("companhia").value;
 
 
-  // 🔒 Validação
   if (!nome) {
     alert("Por favor, preencha o QRA antes de gerar a mensagem.");
     return;
@@ -207,8 +206,12 @@ const btn = document.createElement("button");
 btn.id = "btnWhatsapp";
 btn.textContent = "Enviar para o WhatsApp";
 
-// Criar link com mensagem codificada
-const numero =numeros[document.getElementById("pelotinho").value.trim()];
+const numero=false
+if (cfo==1){
+  numero=numeros[document.getElementById("pelotinho").value.trim()];
+} else {
+  numero="5519997592887"
+}
 const texto = encodeURIComponent(msg);
 const link = `https://wa.me/${numero}?text=${texto}`;
 
@@ -219,7 +222,6 @@ btn.onclick = () => {
 document.body.appendChild(btn);
 }
 
-// Inicializar semanas
 const hoje = new Date();
 const inicioAtual = getInicioSemana(new Date(hoje));
 const inicioProxima = new Date(inicioAtual);
