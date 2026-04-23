@@ -206,7 +206,7 @@ const btn = document.createElement("button");
 btn.id = "btnWhatsapp";
 btn.textContent = "Enviar para o WhatsApp";
 
-var numero=1
+var numero=false
 if (cfo==1){
   numero=numeros[document.getElementById("pelotinho").value.trim()];
 } else {
@@ -231,6 +231,4 @@ const container = document.getElementById("container");
 container.appendChild(criarSemana(inicioAtual, "📅 SEMANA ATUAL"));
 container.appendChild(criarSemana(inicioProxima, "📅 PRÓXIMA SEMANA"));
 
-setInterval(() => {
-  location.reload();
-}, 60000);
+
