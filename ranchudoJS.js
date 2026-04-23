@@ -206,7 +206,7 @@ const btn = document.createElement("button");
 btn.id = "btnWhatsapp";
 btn.textContent = "Enviar para o WhatsApp";
 
-const numero=false
+var numero=1
 if (cfo==1){
   numero=numeros[document.getElementById("pelotinho").value.trim()];
 } else {
