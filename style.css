@@ -3,6 +3,9 @@ html, body {
   padding: 0;
 }
 
+*{
+  border: solid 1px white;
+}
 body {
   font-family: Arial;
   padding: 20px;
